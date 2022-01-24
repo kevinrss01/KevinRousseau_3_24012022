@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAKA,OAAO,CAAC,sEAAI;AACZ,OAAO,CAAC,4EAAI;AAIZ,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,CAAA;EACN,WAAW,EAAE,oBAAoB;CACpC;;AAED,AAAA,CAAC,CAAA;EACG,WAAW,EAAE,oBAAoB;CACpC",
+    "sources": [
+        "../SCSS/Base.scss",
+        "../SCSS/_utils.scss",
+        "../SCSS/layouts/_Menu.scss",
+        "../SCSS/layouts/_footer.scss"
+    ],
+    "names": [],
+    "file": "Base.css"
+}
