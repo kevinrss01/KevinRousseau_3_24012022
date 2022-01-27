@@ -1,4 +1,27 @@
 $couleur_primaire: #9356DC;
 $couleur_secondaire: #FF79DA;
 $couleur_tertiaire: #99E2D0;
-
+$gris_primaire: #EBEBEB;
+@mixin text-align {
+    text-align: center;
+}
+@mixin flex-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin column-centre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin max-width {
+    width: 100%;
+}
+@mixin box-shadow{
+    box-shadow: 5px 5px 15px darken($color: white, $amount: 20%)
+}
+@mixin taille-images-resto{
+    width: 100%;
+    height: 170px;
+}

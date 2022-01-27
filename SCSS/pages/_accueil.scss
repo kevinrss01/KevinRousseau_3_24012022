@@ -1,0 +1,237 @@
+header{
+    width: 100%;
+    @include flex-centre;
+    height: 60px;
+    @include box-shadow;
+    a{
+        color: black;
+    }
+   
+}
+
+.recherche{
+    background-color: #EBEBEB;
+    @include max-width;
+    height: 50px;
+    @include flex-centre;
+    
+
+    .icon{
+        
+        opacity: 80%;
+        margin-right: 10px;
+
+    }
+
+    input{
+        border: none;
+        background: none;
+        font-size: 18px;
+        @include text-align;
+        width: 150px;
+        opacity: 70%;
+    }
+}
+
+.exploration{
+
+    background-color: darken($color: white, $amount: 5%);
+    @include text-align;
+    justify-content: center;
+    height: 270px;
+    @include max-width;
+    padding-top: 20px;
+    border: transparent solid 1px;
+    
+    h2{
+        font-size: 25px;
+    }
+
+    p{
+        opacity: 60%;
+        font-size: 18px;
+        
+    }
+
+}
+
+.btn{
+    @include flex-centre;
+    
+
+    button{
+        width: 220px;
+        height: 50px;
+        border: none;
+        border-radius: 30px;
+        background: linear-gradient(to bottom right, $couleur_secondaire, $couleur_primaire);
+        font: bold;
+        font-size: 15px;
+        @include flex-centre;
+
+        
+
+        a{
+            color: white;
+        }
+    }
+}
+
+.fonctionnement{
+    width: 100%;
+
+    h2{
+        padding-left: 10px;
+    }
+}
+
+.conteneur_cartes_f{
+    @include max-width;
+    height: auto;
+    @include column-centre;
+    
+}
+
+
+.carte_fonctionnement{
+    @include flex-centre;
+    width: 90%;
+    border-radius: 20px;
+    height: 60px;
+    background-color: darken($color: white, $amount: 3%);
+    margin-bottom: 20px;
+    @include box-shadow;
+    
+    &:hover{
+        color: $couleur_primaire;
+        background-color: lighten($color: $couleur_primaire, $amount: 35%);
+
+        .texte{
+            color: black;
+        }
+
+        .icon{
+            opacity: 100%;
+        }
+    }
+    
+    .one{
+        background-color: $couleur_primaire;
+        width: 25px;
+        height: 25px;
+        border-radius: 20px;
+        @include flex-centre;
+        position: absolute;
+        margin-right: 330px;
+        color: white;
+
+    }
+
+    .icon
+    {
+        margin-right: 250px;
+        font-size: 18px;
+        opacity: 50%;
+        position: absolute;
+    }
+
+    .texte{
+        width: 200px;
+        margin-left: 20px;
+    }
+
+}
+
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding-bottom: 50px;
+
+    h2{
+        width: 90%;
+        height: auto;
+    }
+
+    .carte_restaurant2{
+    
+        .img{
+    
+            img{
+                @include taille-images-resto;
+                object-fit: cover;
+                object-position: 50% 60%;
+            }   
+        }
+    }
+}
+
+
+
+.carte_restaurant, .carte_restaurant2{
+    width: 90%;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    @include box-shadow;
+    margin-bottom: 15px;
+    
+
+    .img{
+        @include taille-images-resto;
+
+        img{
+            @include taille-images-resto;
+            object-fit: cover;
+            object-position: bottom;
+        }
+    }
+
+    p{
+        @include flex-centre;
+        background-color: $couleur-tertiaire;
+        height: 30px;
+        width: 100px;
+        color: darken($color: $couleur-tertiaire, $amount: 35%);
+        border-radius: 5px;
+        position: absolute;
+        margin-left: 220px;
+    }
+
+
+}
+
+
+.corp_carte_r{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .titre_restaurant{
+        color: black;
+        width: 90%;
+        height: auto;
+        margin-top: 18px;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+
+        i{
+            font-size: 25px;
+            margin: 15px 0px 0px 265px;
+            position: absolute;
+        }
+    }
+
+    .texte_carte{
+        width: 90%;
+        height: auto;
+        margin-top: 5px;
+        color: black;
+    }
+
+}

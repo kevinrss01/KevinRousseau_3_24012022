@@ -1,0 +1,58 @@
+footer{
+
+    width: 100%;
+    height: auto;
+    background-color: darken($color: white, $amount: 80%);
+    color: white;
+    padding: 20px 0px 20px 20px;
+    
+    
+    h1{
+        font-size: 17px;
+    }
+
+    a{
+        color: white;
+    }
+
+    li{
+        margin-bottom: 8px;
+    }
+
+    .proposition{
+        &::before{
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\f2e7";
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font-size: 15px;
+            width: 10px;
+            color:white;
+            margin-right: 15px;
+        }
+    }
+
+    .partenaire{
+        &::before{
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\f4c4";
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font-size: 13px;
+            width: 10px;
+            color:white;
+            margin-right: 15px;
+
+        }
+    }
+
+
+}
