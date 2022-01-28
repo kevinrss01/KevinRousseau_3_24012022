@@ -18,10 +18,21 @@ $gris_primaire: #EBEBEB;
 @mixin max-width {
     width: 100%;
 }
+@mixin background_degrade {
+    background: linear-gradient(to bottom right, $couleur_secondaire, $couleur_primaire);
+}
 @mixin box-shadow{
     box-shadow: 5px 5px 15px darken($color: white, $amount: 20%)
 }
 @mixin taille-images-resto{
     width: 100%;
     height: 170px;
+}
+@mixin background_darken_white5 {
+    background-color: darken($color: #FFFFFF, $amount: 5%) ;
+}
+@mixin flex_colonne_centre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

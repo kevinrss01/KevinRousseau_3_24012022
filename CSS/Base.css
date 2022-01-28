@@ -14,7 +14,7 @@ footer h1 {
 }
 
 footer a {
-  color: white;
+  color: #FFF;
 }
 
 footer li {
@@ -51,6 +51,10 @@ footer .partenaire::before {
   margin-right: 15px;
 }
 
+.header_menu {
+  background-color: #f2f2f2;
+}
+
 .header_menu a {
   margin-right: 70px;
 }
@@ -71,23 +75,124 @@ footer .partenaire::before {
      object-fit: cover;
 }
 
+main .image_menu_enchantee {
+  width: 100%;
+  height: 230px;
+}
+
+main .image_menu_enchantee img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 290px;
+}
+
 .carte_menu {
   width: 100%;
   height: auto;
-  background-color: white;
+  background-color: #f2f2f2;
   margin-top: 0px;
   padding: 30px 0px 0px 0px;
   border-radius: 30px 30px 0px 0px;
   position: relative;
 }
 
-.texte_carte_menu {
+.titre_menu {
   padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.texte_carte_menu h1 {
-  margin: 0%;
+.titre_menu h1 {
+  margin: 0px 60px 0px 0px;
   font-size: 25px;
+}
+
+.titre_menu i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+}
+
+.plats_menu p {
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+  width: 40px;
+  margin-top: 40px;
+}
+
+.cartes_plats {
+  height: auto;
+  padding-left: 15px;
+}
+
+.cartes_plats .style_carte_plats {
+  background-color: white;
+  width: 95%;
+  height: 60px;
+  border-radius: 15px;
+  padding: 15px 0px 0px 10px;
+  margin-top: 15px;
+  -webkit-box-shadow: 5px 5px 15px #cccccc;
+          box-shadow: 5px 5px 15px #cccccc;
+}
+
+.cartes_plats .style_carte_plats .nom_plat {
+  font-size: 18px;
+}
+
+.cartes_plats .style_carte_plats .description_et_prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+.cartes_plats .style_carte_plats .description_et_prix span {
+  width: 86%;
+  font-size: 15px;
+}
+
+.cartes_plats .style_carte_plats .description_et_prix .prix {
+  opacity: 70%;
+}
+
+.conteneur_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.conteneur_btn button {
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-box-shadow: 5px 5px 15px #cccccc;
+          box-shadow: 5px 5px 15px #cccccc;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  height: 50px;
+  width: 170px;
+  margin: 50px 0px 50px 0px;
+  font-size: 15px;
 }
 
 header {
@@ -201,12 +306,12 @@ header a {
 }
 
 .fonctionnement h2 {
-  padding-left: 10px;
+  margin-top: 40px;
+  padding-left: 4%;
 }
 
 .conteneur_cartes_f {
   width: 100%;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,6 +322,7 @@ header a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 40px;
 }
 
 .carte_fonctionnement {
@@ -232,7 +338,7 @@ header a {
   width: 90%;
   border-radius: 20px;
   height: 60px;
-  background-color: #f7f7f7;
+  background-color: #f2f2f2;
   margin-bottom: 20px;
   -webkit-box-shadow: 5px 5px 15px #cccccc;
           box-shadow: 5px 5px 15px #cccccc;
@@ -302,6 +408,7 @@ header a {
 .restaurants h2 {
   width: 90%;
   height: auto;
+  margin-top: 50px;
 }
 
 .restaurants .carte_restaurant2 .img img {
