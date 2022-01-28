@@ -52,8 +52,9 @@ main{
     padding-left: 20px;
     display: flex;
     h1{
-        margin: 0px 60px 0px 0px;
+        margin: 0%;
         font-size: 25px;
+        width: 85%;
     }
 
     i{
@@ -71,6 +72,7 @@ main{
     }
 }
 
+
 .cartes_plats{
     height: auto;
     padding-left: 15px;
@@ -78,32 +80,31 @@ main{
     .style_carte_plats{
         background-color: white;
         width: 95%;
-        height: 60px;
+        height: auto;
         border-radius: 15px;
-        padding: 15px 0px 0px 10px;
+        padding: 15px 0px 10px 10px;
         margin-top: 15px;
         @include box-shadow;
-
-        .nom_plat{
-            font-size: 18px;
-        }
-
-        .description_et_prix{
-            display: flex;
-            margin-top: 5px;
-
-            span{
-                width: 86%;
-                font-size: 15px
-            }
-
-            .prix{
-                opacity: 70%;
-            }
-        }
     }
 }
 
+.nom_plat{
+    font-size: 18px;
+}
+
+.description_et_prix{
+    display: flex;
+    margin-top: 5px;
+
+    span{
+        width: 86%;
+        font-size: 15px
+    }
+
+    .prix{
+        opacity: 70%;
+    }
+}
 .conteneur_btn{
     @include flex-centre;
     width: 100%;

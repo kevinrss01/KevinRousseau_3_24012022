@@ -107,8 +107,9 @@ main .image_menu_enchantee img {
 }
 
 .titre_menu h1 {
-  margin: 0px 60px 0px 0px;
+  margin: 0%;
   font-size: 25px;
+  width: 85%;
 }
 
 .titre_menu i {
@@ -139,31 +140,31 @@ main .image_menu_enchantee img {
 .cartes_plats .style_carte_plats {
   background-color: white;
   width: 95%;
-  height: 60px;
+  height: auto;
   border-radius: 15px;
-  padding: 15px 0px 0px 10px;
+  padding: 15px 0px 10px 10px;
   margin-top: 15px;
   -webkit-box-shadow: 5px 5px 15px #cccccc;
           box-shadow: 5px 5px 15px #cccccc;
 }
 
-.cartes_plats .style_carte_plats .nom_plat {
+.nom_plat {
   font-size: 18px;
 }
 
-.cartes_plats .style_carte_plats .description_et_prix {
+.description_et_prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 5px;
 }
 
-.cartes_plats .style_carte_plats .description_et_prix span {
+.description_et_prix span {
   width: 86%;
   font-size: 15px;
 }
 
-.cartes_plats .style_carte_plats .description_et_prix .prix {
+.description_et_prix .prix {
   opacity: 70%;
 }
 
