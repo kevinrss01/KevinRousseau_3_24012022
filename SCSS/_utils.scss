@@ -36,3 +36,29 @@ $gris_primaire: #EBEBEB;
     flex-direction: column;
     align-items: center;
 }
+@mixin more_shadows_and_brightness{
+    box-shadow: 5px 5px 15px darken($color: white, $amount: 40%);
+    filter: brightness(102%);                     
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@keyframes loading {
+    to {
+        transform: rotate(1turn);
+    }
+}
+@keyframes width-80px{
+    from{
+        width: 0px;
+    }
+    to {
+        width: 80px;
+    }
+}
