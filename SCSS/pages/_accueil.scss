@@ -298,3 +298,34 @@ header{
     }
 
 }
+
+@media all and (min-width: 800px){
+    .conteneur_cartes_f{
+      
+    }
+    .carte_fonctionnement{
+        width: 90%;
+
+        .one{
+            margin-right: 88%;
+        }
+    }
+
+    .restaurants{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-left: 25px;
+        padding-right: 25px;
+        
+        .carte_restaurant, .carte_restaurant2{
+            width: 45%;
+            margin : 0px 45px 30px 0px;
+
+            p{
+                margin-left: 300px;
+            }
+        }
+    }
+
+}

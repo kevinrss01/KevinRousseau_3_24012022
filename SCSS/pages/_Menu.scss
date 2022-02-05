@@ -272,5 +272,22 @@ body{
         }
     }
 }
+@media all and (min-width: 800px){
+    .cartes_plats{
+    }
+    .corp_carte{
+        display: flex;
+        padding:35px 0px 10px 50px;
 
+    }
+    .style_carte_plats1, .style_carte_plats2, .style_carte_plats3, .style_carte_plats_poulet{
+        max-width: 100%;
+    }
+    .nom_plat{
+        width: 320px;
+    }
+    .prix{
+        margin-left: 100px;
+    }
+}
 

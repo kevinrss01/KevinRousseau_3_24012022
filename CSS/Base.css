@@ -454,6 +454,24 @@ body main .style_poulet {
           filter: brightness(102%);
 }
 
+@media all and (min-width: 800px) {
+  .corp_carte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 35px 0px 10px 50px;
+  }
+  .style_carte_plats1, .style_carte_plats2, .style_carte_plats3, .style_carte_plats_poulet {
+    max-width: 100%;
+  }
+  .nom_plat {
+    width: 320px;
+  }
+  .prix {
+    margin-left: 100px;
+  }
+}
+
 .loading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -860,6 +878,35 @@ header a {
   height: auto;
   margin-top: 5px;
   color: black;
+}
+
+@media all and (min-width: 800px) {
+  .carte_fonctionnement {
+    width: 90%;
+  }
+  .carte_fonctionnement .one {
+    margin-right: 88%;
+  }
+  .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .restaurants .carte_restaurant, .restaurants .carte_restaurant2 {
+    width: 45%;
+    margin: 0px 45px 30px 0px;
+  }
+  .restaurants .carte_restaurant p, .restaurants .carte_restaurant2 p {
+    margin-left: 300px;
+  }
 }
 
 h1 {
