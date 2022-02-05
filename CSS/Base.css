@@ -194,7 +194,7 @@ main .image_menu_enchantee img {
       -ms-flex-align: center;
           align-items: center;
   width: 95%;
-  height: 70px;
+  height: 65px;
   border-radius: 15px;
   margin-top: 15px;
   -webkit-box-shadow: 5px 5px 15px #cccccc;
@@ -209,10 +209,86 @@ main .image_menu_enchantee img {
 }
 
 .cartes_plats .style_carte_plats1 .nom_plat, .cartes_plats .style_carte_plats2 .nom_plat, .cartes_plats .style_carte_plats3 .nom_plat {
-  font-size: 18px;
+  font-size: 17px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.style_carte_plats_poulet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  height: 85px;
+  border-radius: 15px;
+  margin-top: 15px;
+  -webkit-box-shadow: 5px 5px 15px #cccccc;
+          box-shadow: 5px 5px 15px #cccccc;
+}
+
+.style_carte_plats_poulet:hover {
+  -webkit-box-shadow: 5px 5px 15px #999999;
+          box-shadow: 5px 5px 15px #999999;
+  -webkit-filter: brightness(102%);
+          filter: brightness(102%);
+}
+
+.style_carte_plats_poulet .nom_plat {
+  font-size: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.style_carte_plats_poulet .animation_menu_poulet {
+  height: 85px;
+  width: 0px;
+  background: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  margin-left: 0px;
+}
+
+.style_carte_plats_poulet .animation_menu_poulet .boule {
+  height: 28px;
+  width: 28px;
+  background: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+}
+
+.style_carte_plats_poulet .animation_menu_poulet .boule::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: #99E2D0;
 }
 
 .style_carte_plats1 {
@@ -241,6 +317,9 @@ main .image_menu_enchantee img {
   width: 80px;
   -webkit-animation: width-80px 1s alternate;
           animation: width-80px 1s alternate;
+  margin-left: 15px;
+  -webkit-transition: margin-left 1s;
+  transition: margin-left 1s;
 }
 
 .corp_carte:hover + .animation_menu > .boule {
@@ -251,8 +330,25 @@ main .image_menu_enchantee img {
   transition: opacity 1s;
 }
 
+.corp_carte:hover + .animation_menu_poulet {
+  width: 80px;
+  -webkit-animation: width-80px 1s alternate;
+          animation: width-80px 1s alternate;
+  margin-left: 15px;
+  -webkit-transition: margin-left 1s;
+  transition: margin-left 1s;
+}
+
+.corp_carte:hover + .animation_menu_poulet > .boule {
+  -webkit-animation: loading 1s;
+          animation: loading 1s;
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
 .animation_menu {
-  height: 70px;
+  height: 65px;
   width: 0px;
   background: #99E2D0;
   border-radius: 0px 15px 15px 0px;
@@ -266,6 +362,7 @@ main .image_menu_enchantee img {
       -ms-flex-align: center;
           align-items: center;
   opacity: 1;
+  margin-left: 0px;
 }
 
 .animation_menu .boule {
@@ -301,12 +398,12 @@ main .image_menu_enchantee img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 8px;
+  margin-top: 5px;
 }
 
 .description_et_prix span {
   width: 270px;
-  font-size: 15px;
+  font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -316,6 +413,10 @@ main .image_menu_enchantee img {
   opacity: 70%;
   width: 30px;
   padding-right: 20px;
+}
+
+body main .style_poulet {
+  height: 80px;
 }
 
 .conteneur_btn {
@@ -684,41 +785,78 @@ header a {
   margin-left: 220px;
 }
 
-.corp_carte_r {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.corp_carte_r .titre_restaurant {
+.titre_restaurant {
   color: black;
-  width: 90%;
+  width: 89%;
   height: auto;
-  margin-top: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 18px;
 }
 
-.corp_carte_r .titre_restaurant i {
-  font-size: 25px;
-  margin: 15px 0px 0px 265px;
+.icon_coeur {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+
+.icon_coeur input {
+  width: 30px;
+  height: 30px;
   position: absolute;
+  opacity: 0;
+  z-index: 3;
+}
+
+.icon_coeur input:checked + .far + .fas {
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.icon_coeur input:checked + .far {
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.icon_coeur i {
+  position: absolute;
+  font-size: 25px;
+}
+
+.icon_coeur .far {
+  color: black;
+}
+
+.icon_coeur .fas {
+  font-size: 26px;
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.corp_carte_r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding: 15px 10px 10px 15px;
 }
 
 .corp_carte_r .texte_carte {
-  width: 90%;
   height: auto;
   margin-top: 5px;
   color: black;

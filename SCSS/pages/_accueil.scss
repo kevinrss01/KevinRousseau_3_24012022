@@ -236,31 +236,62 @@ header{
     }
 
 }
-  
 
+.titre_restaurant{
+    color: black;
+    width: 89%;
+    height: auto;
+    align-items: center;
+    font-size: 18px;
 
+}
 
-.corp_carte_r{
-    @include flex_colonne_centre;
-
-    .titre_restaurant{
-        color: black;
-        width: 90%;
-        height: auto;
-        margin-top: 18px;
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-
-        i{
-            font-size: 25px;
-            margin: 15px 0px 0px 265px;
-            position: absolute;
+.icon_coeur{
+    width: 30px;
+    height: 30px;
+    @include flex-centre;
+    margin-top: 5px;
+    input{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        opacity: 0;
+        z-index: 3;
+        &:checked + .far + .fas{
+            opacity: 1;
+            transition: opacity 1s;
+        }
+        &:checked + .far{
+            opacity: 0;
+            transition: opacity 500ms;
         }
     }
 
+    i{
+        position: absolute;
+        font-size: 25px;
+    }
+
+    .far{
+        color: black;
+    }
+
+    .fas{
+        font-size: 26px;
+        opacity: 0;
+        @include background_degrade;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+}
+
+.corp_carte_r{
+    display: flex;
+    width: 90%;
+    padding: 15px 10px 10px 15px;
+
     .texte_carte{
-        width: 90%;
         height: auto;
         margin-top: 5px;
         color: black;

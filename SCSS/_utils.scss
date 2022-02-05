@@ -21,6 +21,9 @@ $gris_primaire: #EBEBEB;
 @mixin background_degrade {
     background: linear-gradient(to bottom right, $couleur_secondaire, $couleur_primaire);
 }
+@mixin couleur_degrade {
+    color: linear-gradient(to bottom right, $couleur_secondaire, $couleur_primaire);
+}
 @mixin box-shadow{
     box-shadow: 5px 5px 15px darken($color: white, $amount: 20%)
 }
