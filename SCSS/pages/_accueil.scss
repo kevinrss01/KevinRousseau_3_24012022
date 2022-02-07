@@ -1,8 +1,6 @@
 
 .loading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-centre;
     height: 100%;
     width: 100%;
     background: rgba(255, 255, 255, 0.8);
@@ -10,7 +8,6 @@
     transition: opacity 0.5s 3s ease-in;
     position: absolute;
     z-index: 2;
-    animation: d_none 3s;
     &::after{
         content: "";
         width: 80px;
@@ -100,7 +97,7 @@ header{
             @include more_shadows_and_brightness;
         }
         
-        a{
+        span{
             color: white;
 
         }
@@ -155,7 +152,7 @@ header{
         border-radius: 20px;
         @include flex-centre;
         position: absolute;
-        margin-right: 330px;
+        margin-right: 86%;
         color: white;
 
     }
@@ -176,9 +173,7 @@ header{
 }
 
 .restaurants{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include column-centre;
     height: auto;
     width: 100%;
     background-color: #f2f2f2;
@@ -210,9 +205,7 @@ header{
     overflow: hidden;
     @include box-shadow;
     margin-bottom: 15px;
-    &:hover{
-        @include more_shadows_and_brightness;
-    }
+    cursor: pointer;
 
     .img{
         @include taille-images-resto;
@@ -250,14 +243,15 @@ header{
     width: 30px;
     height: 30px;
     @include flex-centre;
-    margin-top: 5px;
+    position: absolute;
+    margin: 50% 0% 0% 69%;
+
     input{
         width: 30px;
         height: 30px;
-        position: absolute;
         opacity: 0;
         z-index: 3;
-        &:checked + .far + .fas{
+        &:checked + .far + .fas{ /*combinateur*/
             opacity: 1;
             transition: opacity 1s;
         }
@@ -296,13 +290,10 @@ header{
         margin-top: 5px;
         color: black;
     }
-
 }
 
 @media all and (min-width: 800px){
-    .conteneur_cartes_f{
-      
-    }
+    
     .carte_fonctionnement{
         width: 90%;
 
@@ -317,6 +308,10 @@ header{
         flex-direction: row;
         padding-left: 25px;
         padding-right: 25px;
+        
+        .icon_coeur{
+            margin: 20% 0% 0% 37%;
+        }
         
         .carte_restaurant, .carte_restaurant2{
             width: 45%;

@@ -27,3 +27,8 @@ ul{
 li{
     list-style-type: none;
 }
+input{
+    &:hover{
+        cursor: pointer;
+    }
+}

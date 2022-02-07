@@ -61,6 +61,10 @@ main{
         @include flex-centre;
         font-size: 25px;
     }
+
+    .icon_coeur{
+        margin: 0% 0% 0% 75%;
+    }
 }
 
 .plats_menu{
@@ -85,6 +89,7 @@ main{
         border-radius: 15px;
         margin-top: 15px;
         @include box-shadow;
+        cursor: pointer;
         &:hover{
             @include more_shadows_and_brightness;
         }
@@ -98,6 +103,7 @@ main{
     }
 }
 .style_carte_plats_poulet{
+    cursor: pointer;
     display: flex;
     align-items: center;
     width: 95%;
@@ -149,8 +155,6 @@ main{
     
 
 }
-
-
 
 .style_carte_plats1{
     animation: fadein 1s ease-in;
@@ -266,6 +270,7 @@ body{
         width: 170px;
         margin: 50px 0px 50px 0px;
         font-size: 15px;
+        cursor: pointer;
 
         &:hover{
             @include more_shadows_and_brightness;
@@ -273,8 +278,7 @@ body{
     }
 }
 @media all and (min-width: 800px){
-    .cartes_plats{
-    }
+
     .corp_carte{
         display: flex;
         padding:35px 0px 10px 50px;
@@ -289,5 +293,6 @@ body{
     .prix{
         margin-left: 100px;
     }
+
 }
 

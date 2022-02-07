@@ -174,6 +174,10 @@ main .image_menu_enchantee img {
   font-size: 25px;
 }
 
+.titre_menu .icon_coeur {
+  margin: 0% 0% 0% 75%;
+}
+
 .plats_menu p {
   border-bottom: 3px solid #99E2D0;
   padding-bottom: 5px;
@@ -199,6 +203,7 @@ main .image_menu_enchantee img {
   margin-top: 15px;
   -webkit-box-shadow: 5px 5px 15px #cccccc;
           box-shadow: 5px 5px 15px #cccccc;
+  cursor: pointer;
 }
 
 .cartes_plats .style_carte_plats1:hover, .cartes_plats .style_carte_plats2:hover, .cartes_plats .style_carte_plats3:hover {
@@ -216,6 +221,7 @@ main .image_menu_enchantee img {
 }
 
 .style_carte_plats_poulet {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,6 +451,7 @@ body main .style_poulet {
   width: 170px;
   margin: 50px 0px 50px 0px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .conteneur_btn button:hover {
@@ -490,8 +497,6 @@ body main .style_poulet {
   transition: opacity 0.5s 3s ease-in;
   position: absolute;
   z-index: 2;
-  -webkit-animation: d_none 3s;
-          animation: d_none 3s;
 }
 
 .loading::after {
@@ -627,7 +632,7 @@ header a {
           filter: brightness(102%);
 }
 
-.btn button a {
+.btn button span {
   color: white;
 }
 
@@ -705,7 +710,7 @@ header a {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  margin-right: 330px;
+  margin-right: 86%;
   color: white;
 }
 
@@ -761,13 +766,7 @@ header a {
   -webkit-box-shadow: 5px 5px 15px #cccccc;
           box-shadow: 5px 5px 15px #cccccc;
   margin-bottom: 15px;
-}
-
-.carte_restaurant:hover, .carte_restaurant2:hover {
-  -webkit-box-shadow: 5px 5px 15px #999999;
-          box-shadow: 5px 5px 15px #999999;
-  -webkit-filter: brightness(102%);
-          filter: brightness(102%);
+  cursor: pointer;
 }
 
 .carte_restaurant .img, .carte_restaurant2 .img {
@@ -825,18 +824,19 @@ header a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 5px;
+  position: absolute;
+  margin: 50% 0% 0% 69%;
 }
 
 .icon_coeur input {
   width: 30px;
   height: 30px;
-  position: absolute;
   opacity: 0;
   z-index: 3;
 }
 
 .icon_coeur input:checked + .far + .fas {
+  /*combinateur*/
   opacity: 1;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
@@ -900,6 +900,9 @@ header a {
     padding-left: 25px;
     padding-right: 25px;
   }
+  .restaurants .icon_coeur {
+    margin: 20% 0% 0% 37%;
+  }
   .restaurants .carte_restaurant, .restaurants .carte_restaurant2 {
     width: 45%;
     margin: 0px 45px 30px 0px;
@@ -927,5 +930,9 @@ ul {
 
 li {
   list-style-type: none;
+}
+
+input:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=Base.css.map */
