@@ -282,18 +282,33 @@ body{
     .corp_carte{
         display: flex;
         padding:35px 0px 10px 50px;
+        width: 90%;
 
     }
     .style_carte_plats1, .style_carte_plats2, .style_carte_plats3, .style_carte_plats_poulet{
         max-width: 100%;
     }
-    .nom_plat{
-        width: 320px;
-    }
     .prix{
-        margin-left: 100px;
-        margin-right: 180px;
+        margin-left: 0%;
+        margin-right: 0%;
     }
+
+    .nom_plat{
+        width: 45%;
+    }
+
+    .description_et_prix{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    span{
+        margin-right: 0%;
+    }
+
+
+
 
 }
 
