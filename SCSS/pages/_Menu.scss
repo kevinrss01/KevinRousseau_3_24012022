@@ -178,7 +178,7 @@ main{
         transition: margin-left 1s;
         
     }
-    &:hover + .animation_menu > .boule{
+    &:hover + .animation_menu > .boule{ 
         animation: loading 1s;
         opacity: 1;
         transition: opacity 1s;
@@ -292,6 +292,7 @@ body{
     }
     .prix{
         margin-left: 100px;
+        margin-right: 180px;
     }
 
 }

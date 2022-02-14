@@ -2,13 +2,13 @@
 .loading{
     @include flex-centre;
     height: 100%;
-    width: 100%;
+    width: 95%;
     background: rgba(255, 255, 255, 0.8);
-    opacity: 0;
-    transition: opacity 0.5s 3s ease-in;
+    opacity: 1;
+    animation: opacity1-0 3s ease-in forwards;
     position: absolute;
     z-index: 2;
-    &::after{
+    .loading_animation{
         content: "";
         width: 80px;
         height: 80px;
@@ -133,7 +133,7 @@ header{
     z-index: 3;
     &:hover{
         color: $couleur_primaire;
-        background-color: lighten($color: $couleur_primaire, $amount: 35%);
+        background-color: lighten($color: $couleur_primaire, $amount: 35%); /**/
     }
     
     .texte{
@@ -159,10 +159,9 @@ header{
 
     .icon
     {
-        margin-right: 250px;
+        margin-right: 0px;
         font-size: 18px;
         opacity: 50%;
-        position: absolute;
     }
 
     .texte{
@@ -178,9 +177,11 @@ header{
     width: 100%;
     background-color: #f2f2f2;
     padding-bottom: 50px;
+    padding: 0%;
+    
 
     h2{
-        width: 90%;
+        width: 80%;
         height: auto;
         margin-top: 50px; 
     }
@@ -225,7 +226,7 @@ header{
         color: darken($color: $couleur-tertiaire, $amount: 35%);
         border-radius: 5px;
         position: absolute;
-        margin-left: 220px;
+        margin-left: 45%;
     }
 
 }
@@ -240,18 +241,19 @@ header{
 }
 
 .icon_coeur{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     @include flex-centre;
     position: absolute;
-    margin: 50% 0% 0% 69%;
+    margin-left: 65%;
 
     input{
         width: 30px;
         height: 30px;
         opacity: 0;
         z-index: 3;
-        &:checked + .far + .fas{ /*combinateur*/
+        position: absolute;
+        &:checked + .far + .fas{ /*combinateur adjacent*/
             opacity: 1;
             transition: opacity 1s;
         }
@@ -282,7 +284,7 @@ header{
 
 .corp_carte_r{
     display: flex;
-    width: 90%;
+    width: 70%;
     padding: 15px 10px 10px 15px;
 
     .texte_carte{
@@ -306,19 +308,25 @@ header{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        padding-left: 25px;
-        padding-right: 25px;
-        
-        .icon_coeur{
-            margin: 20% 0% 0% 37%;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        h2
+        {
+            margin-left: 35px;
         }
+
+        .icon_coeur{
+            margin-left: 35%;
+        }
+        
         
         .carte_restaurant, .carte_restaurant2{
             width: 45%;
-            margin : 0px 45px 30px 0px;
+            margin : 0px 0px 30px 35px;
 
             p{
-                margin-left: 300px;
+                margin-left: 30%;
             }
         }
     }

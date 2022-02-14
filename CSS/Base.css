@@ -50,16 +50,35 @@
   }
 }
 
+@-webkit-keyframes opacity1-0 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes opacity1-0 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 footer {
   width: 100%;
   height: auto;
   background-color: #333333;
   color: white;
-  padding: 20px 0px 20px 20px;
+  padding: 20px 0px 20px 0px;
 }
 
 footer h1 {
   font-size: 17px;
+  margin-left: 20px;
 }
 
 footer a {
@@ -68,6 +87,7 @@ footer a {
 
 footer li {
   margin-bottom: 8px;
+  margin-left: 20px;
 }
 
 footer .proposition::before {
@@ -476,6 +496,7 @@ body main .style_poulet {
   }
   .prix {
     margin-left: 100px;
+    margin-right: 180px;
   }
 }
 
@@ -490,16 +511,16 @@ body main .style_poulet {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  width: 100%;
+  width: 95%;
   background: rgba(255, 255, 255, 0.8);
-  opacity: 0;
-  -webkit-transition: opacity 0.5s 3s ease-in;
-  transition: opacity 0.5s 3s ease-in;
+  opacity: 1;
+  -webkit-animation: opacity1-0 3s ease-in forwards;
+          animation: opacity1-0 3s ease-in forwards;
   position: absolute;
   z-index: 2;
 }
 
-.loading::after {
+.loading .loading_animation {
   content: "";
   width: 80px;
   height: 80px;
@@ -685,6 +706,7 @@ header a {
 .carte_fonctionnement:hover {
   color: #9356DC;
   background-color: #f2eafb;
+  /**/
 }
 
 .carte_fonctionnement .texte {
@@ -715,10 +737,9 @@ header a {
 }
 
 .carte_fonctionnement .icon {
-  margin-right: 250px;
+  margin-right: 0px;
   font-size: 18px;
   opacity: 50%;
-  position: absolute;
 }
 
 .carte_fonctionnement .texte {
@@ -741,10 +762,11 @@ header a {
   width: 100%;
   background-color: #f2f2f2;
   padding-bottom: 50px;
+  padding: 0%;
 }
 
 .restaurants h2 {
-  width: 90%;
+  width: 80%;
   height: auto;
   margin-top: 50px;
 }
@@ -799,7 +821,7 @@ header a {
   color: #2c9c81;
   border-radius: 5px;
   position: absolute;
-  margin-left: 220px;
+  margin-left: 45%;
 }
 
 .titre_restaurant {
@@ -813,8 +835,8 @@ header a {
 }
 
 .icon_coeur {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -825,7 +847,7 @@ header a {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  margin: 50% 0% 0% 69%;
+  margin-left: 65%;
 }
 
 .icon_coeur input {
@@ -833,10 +855,11 @@ header a {
   height: 30px;
   opacity: 0;
   z-index: 3;
+  position: absolute;
 }
 
 .icon_coeur input:checked + .far + .fas {
-  /*combinateur*/
+  /*combinateur adjacent*/
   opacity: 1;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
@@ -870,7 +893,7 @@ header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 70%;
   padding: 15px 10px 10px 15px;
 }
 
@@ -897,18 +920,21 @@ header a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .restaurants h2 {
+    margin-left: 35px;
   }
   .restaurants .icon_coeur {
-    margin: 20% 0% 0% 37%;
+    margin-left: 35%;
   }
   .restaurants .carte_restaurant, .restaurants .carte_restaurant2 {
     width: 45%;
-    margin: 0px 45px 30px 0px;
+    margin: 0px 0px 30px 35px;
   }
   .restaurants .carte_restaurant p, .restaurants .carte_restaurant2 p {
-    margin-left: 300px;
+    margin-left: 30%;
   }
 }
 

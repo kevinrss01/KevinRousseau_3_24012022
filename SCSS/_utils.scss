@@ -65,3 +65,13 @@ $gris_primaire: #EBEBEB;
         width: 80px;
     }
 }
+
+@keyframes opacity1-0{
+    from{
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
